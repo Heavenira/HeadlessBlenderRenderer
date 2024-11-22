@@ -3,7 +3,7 @@ import bpy
 scene = bpy.context.scene
 scene.cycles.device = 'GPU'
 
-prefs = bpy.context.user_preferences
+prefs = bpy.context.preferences
 cprefs = prefs.addons['cycles'].preferences
 
 # Attempt to set GPU device types if available
